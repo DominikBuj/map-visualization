@@ -1,0 +1,10 @@
+.flex-row-centered-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.auto-spacer { flex: 1 1 auto; }
+
+.auto-spacer-small { flex: 0.05 1 auto; }

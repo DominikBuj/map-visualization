@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import {AgmCoreModule} from "@agm/core";
 import {HttpClientModule} from "@angular/common/http";
+import {GoogleMapsModule} from "@angular/google-maps";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     BrowserModule,
     HttpClientModule,
-    AgmCoreModule.forRoot({apiKey: 'AIzaSyD5CgZ1v4CAoV78OTaFEva8tyCPrOLvSOk'})
+    GoogleMapsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

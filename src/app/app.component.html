@@ -1,3 +1,8 @@
-<agm-map [latitude]="51.0" [longitude]="51.0">
+<div class="filter-container">
 
-</agm-map>
+</div>
+<google-map [center]="center">
+  <map-marker-clusterer [imagePath]="markerClusterImages">
+    <map-marker *ngFor="let mapObject of mapObjects" [position]="getMarkerPosition(mapObject)" [icon]="getMarkerIcon(mapObject)"></map-marker>
+  </map-marker-clusterer>
+</google-map>
